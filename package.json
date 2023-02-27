@@ -1,29 +1,19 @@
 {
-  "name": "drag-and-drop-ts",
-  "homepage": "http://rexjoseph.github.io/boschedule",
+  "name": "boschedule-app",
   "version": "1.0.0",
-  "description": "drag-and-drop-ts",
+  "description": "boschedule-app",
   "main": "app.js",
-  "files": [
-    "src/"
-  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev": "lite-server",
-    "start": "lite-server",
-    "build": "cross-env NODE_ENV=production parcel build src/index.html --public-url .",
-    "deploy": "gh-pages -d dist"
+    "start": "lite-server"
   },
   "keywords": [
     "typescript",
     "course"
   ],
-  "author": "Rex",
+  "author": "Rex Odemheina",
   "license": "ISC",
   "devDependencies": {
-    "cross-env": "^5.2.0",
-    "gh-pages": "^5.0.0",
-    "parcel-bundler": "^1.9.7",
-    "typescript": "^4.9.5"
+    "lite-server": "^2.5.4"
   }
 }
