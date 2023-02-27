@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Boschedule</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="dist/bundle.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <template id="project-input">
+        <section class="project-input">
+          <form>
+            <section class="greeting">
+              <div class="container">
+                <h1 class="greeting-heading">Hey there,</h1>
+                <p class="greeting-info">Let's log & get some projects done today that pushes us towards the end goal :)</p>
+              </div>
+            </section>
+            <div class="form-flex">
+              <div class="form-control form-flex-1">
+                <label for="title">Title</label>
+                <input type="text" id="title" />
+              </div>
+              <div class="form-control form-flex-1">
+                <label for="people">People</label>
+                <input type="number" id="people" step="1" min="0" max="10" />
+              </div>
+              <div class="form-control form-flex-1">
+                <label for="time">Time</label>
+                <input type="time" id="time" />
+              </div>
+            </div>
+            <div class="form-control">
+              <label for="description">Description</label>
+              <textarea id="description" rows="3"></textarea>
+            </div>
+            <button type="submit">Add Project</button>
+          </form>
+        </section>
+      </template>
+      <template id="single-project">
+        <li class="project-list-li" draggable="true">
+          <div class="project-flex">
+            <div class="project-flex1"></div>
+            <div class="project-flex2">
+              <h4></h4>
+              <h5></h5>
+              <p></p>
+              <span></span>
+            </div>
+          </div>
+        </li>
+      </template>
+      <template id="project-list">
+        <section class="projects">
+          <header>
+            <h2></h2>
+          </header>
+          <ul></ul>
+        </section>
+      </template>
+      <div id="app"></div>
+    </div>
+  </body>
+</html>
