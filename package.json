@@ -1,5 +1,6 @@
 {
   "name": "drag-and-drop-ts",
+  "homepage": "http://rexjoseph.github.io/boschedule",
   "version": "1.0.0",
   "description": "drag-and-drop-ts",
   "main": "app.js",
@@ -21,7 +22,7 @@
   "license": "ISC",
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "gh-pages": "^1.2.0",
+    "gh-pages": "^5.0.0",
     "parcel-bundler": "^1.9.7",
     "typescript": "^4.9.5"
   }
